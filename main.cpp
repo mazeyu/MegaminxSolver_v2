@@ -818,8 +818,9 @@ int main() {
 
     globalState = State;
 
+    auto scrambled = ofstream("state.txt");
 
-    f << test << endl;
+    scrambled << test << endl;
 
     rep(i, 0, sepLines.size()) {
         if (sepLines[i].size() == 5 && cornersInLine[sepLines[i]].size() == 15) {
